@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export const config = { api: { bodyParser: false } };
+export const dynamic = 'force-dynamic'
 
 export async function POST(req: NextRequest) {
   const webhookUrl = process.env.N8N_WEBHOOK_URL;
